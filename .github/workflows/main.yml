@@ -6,8 +6,16 @@ jobs:
   steps:
    - uses: actions/checkout@v2
    - name: Set up JDK 1.8
+<<<<<<< HEAD
    uses: actions/setup-java@v1
    with:
    java-version: 1.8
    - name: Build with Maven
    run: mvn -B package --file pom.xml
+=======
+     uses: actions/setup-java@v1
+     with:
+      java-version: 1.8
+   - name: Build with Maven
+     run: mvn -B package --file pom.xml
+>>>>>>> 3cd30be7703310cdb58be7a0878fe9b7fe228598
